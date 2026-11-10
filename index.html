@@ -84,7 +84,11 @@
       <ul class="points">
         <li>Several windows in one process: drag a tab out to open a new window.</li>
         <li>RAM per tab and for all tabs, so a heavy session stands out.</li>
-        <li>Colours, separators, drag to reorder, keys for everything.</li>
+        <li>Each window has its own colour and name, shown in its title bar and taskbar icon; Ctrl+Tab opens a switcher that goes to a tab in any window.</li>
+        <li>A program that is blocked on you can make its tab glow with a bell and ask to be switched to (<code>fxterm-tabs ctl attention on</code>).</li>
+        <li>Colours, separators and groups that fold, a Zz button that hides a group's sleeping tabs, drag to reorder, keys for everything.</li>
+        <li>Other programs can read a tab through a local control socket: <code>ctl screen</code> (with colours), <code>ctl tail</code>, <code>ctl wait</code>. No TCP port is opened.</li>
+        <li>Also on macOS (Apple silicon and Intel), tested far less than Windows; the install line is in the documentation.</li>
         <li>Font size with Ctrl+= / Ctrl+-, Ctrl+wheel or a pinch.</li>
         <li>Tabby-compatible command line: <code>fxterm-tabs open &lt;dir&gt;</code>, <code>fxterm-tabs run &lt;command&gt;</code>.</li>
       </ul>
